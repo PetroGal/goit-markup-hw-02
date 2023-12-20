@@ -1,4 +1,6 @@
 body {
+  width: 1440px;
+  height: 3300px;
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
@@ -14,8 +16,13 @@ a {
 }
 
 .header-logo {
-  color: #2e2f42;
-  font-family: Raleway;
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
+  width: 71px;
+  color: var(--IRIS, #4d5ae5);
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.16;
@@ -24,8 +31,9 @@ a {
 }
 
 .logo-span {
-  color: #4d5ae5;
-  font-family: Raleway;
+  width: 71px;
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.16;
@@ -34,7 +42,7 @@ a {
 }
 
 .header-navigation-link {
-  color: #2e2f42;
+  color: var(--NAVY-BLUE, #2e2f42);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -47,7 +55,7 @@ a {
 }
 
 .header-address-link {
-  color: #434455;
+  color: var(--SLATE, #434455);
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
@@ -60,15 +68,16 @@ a {
 }
 
 .section-hero {
-  background-color: #2e2f42;
+  background-color: var(--NAVY-BLUE, #2e2f42);
   width: 1440px;
   height: 600px;
+  flex-shrink: 0;
 }
 
 .section-hero-header {
+  width: 496px;
   color: var(--WHITE, #fff);
   text-align: center;
-  font-family: Roboto;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -76,9 +85,15 @@ a {
 }
 
 .section-hero-button {
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--WHITE, #fff);
   background: var(--IRIS, #4d5ae5);
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -91,6 +106,9 @@ a {
   background: var(--OCEAN, #404bbf);
 }
 
+.section-team {
+  background: var(--CLOUD, #f4f4fd);
+}
 .section-header {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -134,6 +152,20 @@ a {
 .footer-logo {
   color: #f4f4fd;
   font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-logo-span {
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--IRIS, #4d5ae5);
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.16;
